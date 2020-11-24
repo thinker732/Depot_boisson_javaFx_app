@@ -1,0 +1,6 @@
+.butt{
+	-fx-background-color: #333645;
+	}
+.glyph-icon{
+	-fx-fill:red;
+}

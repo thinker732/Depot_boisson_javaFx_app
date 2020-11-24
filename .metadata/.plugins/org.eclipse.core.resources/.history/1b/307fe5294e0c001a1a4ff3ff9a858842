@@ -1,0 +1,31 @@
+.butt{
+	-fx-background-color: #333645;
+	-fx-text-fill:white;
+	}
+.glyph-icon{
+	-fx-fill:#70848f;
+}
+
+.butt:hover{
+	-fx-background-color: #4682b4;
+	-fx-text-fill:white;
+	-fx-font-size:18px;
+	}
+
+.butt:hover .glyph-icon{
+		-fx-fill:white;
+		-fx-font-size:25px;
+	}
+.notif{
+	-fx-background-color: #4682b4;
+	-fx-background-radius: 100%;
+}
+.msg{
+	-fx-text-fill:#f5e1e1;
+	-fx-background-color:#1d2c3a;
+	-fx-background-radius:12px;
+}
+
+.container{
+		-fx-background-color: #4682b4;
+}

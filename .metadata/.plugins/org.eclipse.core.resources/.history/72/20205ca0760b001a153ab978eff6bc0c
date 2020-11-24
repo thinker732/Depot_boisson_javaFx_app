@@ -1,0 +1,25 @@
+package connectivity;
+
+import java.sql.DriverManager;
+
+
+
+public class Connexion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("driver O.K");
+			
+			
+			Connection con=DriverManager.getConnection(parametres.url,parametres.user,parametres.password);
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+}

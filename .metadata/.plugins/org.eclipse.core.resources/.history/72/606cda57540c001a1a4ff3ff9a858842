@@ -1,0 +1,10 @@
+.butt{
+	-fx-background-color: #4682b4;
+	-fx-text-fill:white;
+	-fx-font-size:18px;
+	}
+
+.butt .glyph-icon{
+		-fx-fill:white;
+		-fx-font-size:20px;
+	}

@@ -1,0 +1,9 @@
+package connectivity;
+
+public class parametres {
+	
+	public static String url="jdbc:mysql://localhost/Database";
+	public static String login="root";
+	public static String password="";
+	
+}

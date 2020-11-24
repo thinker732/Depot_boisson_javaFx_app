@@ -1,0 +1,15 @@
+.butt{
+	-fx-background-color: #333645;
+	}
+.glyph-icon{
+	-fx-fill:#dcdcdc;
+}
+
+.butt:hover{
+	-fx-background-color: #4682b4;
+	-fx-fill:white;
+	}
+
+butt:hover .glyph-icon{
+		-fx-fill:white;
+	}

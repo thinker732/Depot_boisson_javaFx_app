@@ -1,0 +1,50 @@
+package controllers;
+
+import java.io.IOException;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+
+import javafx.animation.FadeTransition;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.StackPane;
+import javafx.util.Duration;
+
+public class Login_pageController implements Initializable{
+	
+
+	
+	@FXML
+	private AnchorPane logroot;
+
+	@Override
+	public void initialize(URL arg0, ResourceBundle arg1) {
+		if(!application.Main.isSplashLoaded) {
+			loadwelcome();
+		}
+		loadwelcome();
+	}
+	private void loadwelcome() {
+		try {
+			
+			StackPane Pane=FXMLLoader.load(getClass().getResource("/views/Welcome.fxml"));
+			logroot.getChildren().setAll(Pane);
+			
+			FadeTransition fadein=new FadeTransition(Duration.seconds(3),Pane);
+			fadein.setFromValue(0);
+			fadein.setToValue(1);
+			fadein.setCycleCount(1);
+			fadein.play();
+			
+			 
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

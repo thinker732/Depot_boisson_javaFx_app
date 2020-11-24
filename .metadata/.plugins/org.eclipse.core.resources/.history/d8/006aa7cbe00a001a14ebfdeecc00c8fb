@@ -1,0 +1,19 @@
+package controllers;
+
+import javafx.fxml.FXML;
+
+import javafx.scene.control.Button;
+
+import javafx.scene.layout.HBox;
+
+public class Login_pageController {
+	@FXML
+	private HBox hblogin;
+	@FXML
+	private HBox hbmdp;
+	@FXML
+	private Button submit;
+
+	
+	
+}

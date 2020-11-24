@@ -1,0 +1,26 @@
+package controllers;
+
+import javafx.fxml.FXML;
+
+import javafx.scene.layout.HBox;
+
+import javafx.scene.input.MouseEvent;
+
+import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView;
+
+import javafx.scene.layout.VBox;
+
+public class NotifController {
+	@FXML
+	private VBox boite_notif;
+	@FXML
+	private HBox close;
+	@FXML
+	private FontAwesomeIconView closenotif;
+
+	// Event Listener on FontAwesomeIconView[#closenotif].onMouseClicked
+	@FXML
+	public void retirer(MouseEvent event) {
+		VBox.clearConstraints(boite_notif);
+	}
+}

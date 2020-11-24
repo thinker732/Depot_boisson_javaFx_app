@@ -1,0 +1,36 @@
+package connectivity;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+
+public class Connexion {
+
+	static Connection con;
+	public static void connect() throws SQLException {
+		// TODO Auto-generated method stub
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			System.out.println("driver O.K");
+			Connection con=DriverManager.getConnection(parametres.url,parametres.user,parametres.password);
+			System.out.println("connexion etablie");
+			
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		finally {
+			try {
+				con.close();
+				
+			}catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
+
+}

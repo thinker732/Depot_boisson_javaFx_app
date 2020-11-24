@@ -1,0 +1,16 @@
+.butt{
+	-fx-background-color: #333645;
+	-fx-font-size:40px;
+	}
+.glyph-icon{
+	-fx-fill:#70847d;
+}
+
+.butt:hover{
+	-fx-background-color: #4682b4;
+	-fx-text-fill:white;
+	}
+
+.butt:hover .glyph-icon{
+		-fx-fill:white;
+	}
