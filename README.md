@@ -12,12 +12,20 @@ edit the daily report
 the management of the traceability of the bottles in the beverage depot
 
 
-how to use:
+## how to use:
 
 -You need to setup glyphicons for the project
 -You need to install javaFx and setup java Fx
+-import the projet in your ide
 -Run when you done all settings 
 
 
 //*******************************************************//
 The .jar is comming
+
+
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
